@@ -3,14 +3,23 @@
 
 <head>
     <title>JavaScript Arrays Exercise</title>
+    <link rel="stylesheet" type="text/css" href="y2s18-css/style.css">
 </head>
 
 <body>
     <h1>JavaScript Arrays</h1>
-
+<div class="feel">
     <script>
-// your code goes here
+    var feels = prompt("Write three things you are exaited about at MEET. (sperate with comma (,)):")
+    feels = feels.split(", ")
+    console.log(feels)
+    feels.sort()
+    document.write("we are olso exaited about the "+feels[0]+", "+feels[1]+"and "+feels[2])
+
+
     </script>
+
+   </div>
 </body>
 
 </html>

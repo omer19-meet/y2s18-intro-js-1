@@ -18,8 +18,11 @@
     	var lucky_num = prompt("what is your lucky number?")
     	lucky_num = parseInt(lucky_num)
 
-    	var fav_fruit="MANGO"
-    	var fav_sub="PHISICS"
+    	var fav_fruit= prompt("what is your favorit fruit? ")
+    	// fav_fruit = parseInt(fav_fruit)
+
+    	var fav_sub= prompt("what is your favorit Subject? ")
+    	// fav_sub= parseInt(fav_sub)
 
     	document.write(birth_year%lucky_num)
     	document.write("<br>")
@@ -28,10 +31,13 @@
 
     	document.write(birth_year+ " "+ fav_sub)
     	document.write("<br>")
-
+		document.write(fav_fruit+" "+birth_year+" "+fav_sub)
+		document.write("<br>")
+		document.write(birth_year+" "+lucky_num+" "+fav_sub)
 
 
     </script>
+    
 </body>
 
 </html>
