@@ -16,6 +16,34 @@ function isLetter(char) {
 }
 
 // Write your isPalindrome function here!
+function ispali(word) {
+	var list = "";
+	var l = 0 ;
+	for (l= 0; l<word.length;l++){
+		if (isLetter(word[l])){
+			list+=word[l].toLowerCase();
+
+		}
+	}
+	list = list.split("");
+
+	if (list == list.reverse()){
+		return true ;
+	}
+
+	return false;
+}
+
+var word = prompt("insert the word or phrase you wanna find out");
+console.log(word);
+
+if (ispali(word)){
+	document.write(word +" is indid a palindrom");
+}
+else {
+	document.write(word +"isn't a plindrom");
+}
+
 
     </script>
 </body>
